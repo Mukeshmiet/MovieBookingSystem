@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieTime - Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>MovieTime</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./movies.html">Movies</a></li>
+            <li><a href="./profile.html">Username</a></li>
+            <li><a href="./hero.html">Signout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="booking-container">
+        <h1>My Bookings</h1>
+
+        <!-- Booking Item Example -->
+        <div class="booking-item">
+          <h2>Movie Name: Avengers: Endgame</h2>
+          <p><strong>Booking Date:</strong> September 1, 2024</p>
+          <p><strong>Number of Tickets:</strong> 3</p>
+          <p><strong>Theater Name:</strong> Regal Cinemas</p>
+          <p><strong>Location:</strong> New York, NY</p>
+          <p><strong>Show Date:</strong> September 5, 2024</p>
+          <p><strong>Show Time:</strong> 7:00 PM</p>
+          <button id="showPopupBtn" class="delete-booking-btn">Cancel Booking</button>
+        </div>
+
+        <!-- More bookings can be added like this -->
+        <div class="booking-item">
+          <h2>Movie Name: Inception</h2>
+          <p><strong>Booking Date:</strong> September 2, 2024</p>
+          <p><strong>Number of Tickets:</strong> 2</p>
+          <p><strong>Theater Name:</strong> AMC Theatres</p>
+          <p><strong>Location:</strong> Los Angeles, CA</p>
+          <p><strong>Show Date:</strong> September 6, 2024</p>
+          <p><strong>Show Time:</strong> 8:00 PM</p>
+          <button id="showPopupBtn" class="delete-booking-btn">Cancel Booking</button>
+        </div>
+
+        <!-- Cancel Booking Popup -->
+        <div id="popup-overlay" class="popup-overlay">
+          <div class="popup">
+              <button class="close-btn" id="closePopup">&times;</button>
+              <h2>Do you want to cancel this booking?</h2>
+              <div class="popup-actions">
+                  <button id="cancelButton" class="cancel-booking-btn">Cancel Booking</button>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="x.svg" alt="X" /></a>
+            <a href="#"><img src="youtube.svg" alt="YouTube" /></a>
+          </div>
+          <div class="footer-links">
+            <a href="./home.html">Home</a>
+            <a href="./movies.html">Movies</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 All rights reserved</p>
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript to handle opening and closing of the popup
+      const showPopupBtn = document.getElementById('showPopupBtn');
+      const popupOverlay = document.getElementById('popup-overlay');
+      const closePopupBtn = document.getElementById('closePopup');
+      const cancelBtn = document.getElementById('cancelButton');
+  
+      // Show the popup when the button is clicked
+      showPopupBtn.addEventListener('click', () => {
+          popupOverlay.style.display = 'flex';
+      });
+  
+      // Close the popup when the close button is clicked
+      closePopupBtn.addEventListener('click', () => {
+          popupOverlay.style.display = 'none';
+      });
+      
+      cancelBtn.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>

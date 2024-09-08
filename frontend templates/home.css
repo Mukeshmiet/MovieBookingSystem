@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+main {
+    padding: 20px;
+}
+
+.booking-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.booking-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.booking-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.booking-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.delete-booking-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-booking-btn:hover {
+    background-color: #cc3a3a;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff4d4d;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ff4d4d;
+}
+
+.show-popup-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-popup-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Initially hidden */
+    z-index: 9999;
+}
+
+/* Popup Container */
+.popup {
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Popup Heading */
+.popup h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Popup Actions */
+.popup-actions {
+    margin-top: 20px;
+}
+
+/* Cancel Booking Button */
+.cancel-booking-btn {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-booking-btn:hover {
+    background-color: #C70039;
+}

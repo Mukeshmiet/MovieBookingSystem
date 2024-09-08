@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Booking Popup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cancel.css">
+</head>
+<body>
+
+<!-- Main Content -->
+<div class="content">
+    <!-- Trigger button to show popup -->
+    <button id="showPopupBtn" class="show-popup-btn">Show Cancel Booking Popup</button>
+</div>
+
+<!-- Cancel Booking Popup -->
+<div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+        <button class="close-btn" id="closePopup">&times;</button>
+        <h2>Do you want to cancel this booking?</h2>
+        <div class="popup-actions">
+            <button class="cancel-booking-btn">Cancel Booking</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle opening and closing of the popup
+    const showPopupBtn = document.getElementById('showPopupBtn');
+    const popupOverlay = document.getElementById('popup-overlay');
+    const closePopupBtn = document.getElementById('closePopup');
+
+    // Show the popup when the button is clicked
+    showPopupBtn.addEventListener('click', () => {
+        popupOverlay.style.display = 'flex';
+    });
+
+    // Close the popup when the close button is clicked
+    closePopupBtn.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
