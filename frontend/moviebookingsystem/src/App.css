@@ -1,38 +1,217 @@
-.App {
+header {
+  background-color: var(--nav-col);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  width: 95%;
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--logo-col);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: var(--nav-text-col);
+  text-decoration: none;
+  font-weight: 400;
+  position:relative;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--col-8);
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+nav ul li a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+nav ul li a:hover{
+  color: var(--heading-col);
+}
+
+.super-container{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74.8vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text-container {
+  max-width: 50%;
+}
+
+.text-container h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--heading-col) !important;
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: var(--white-text);
+}
+
+.text-container p {
+  margin-bottom: 20px;
+  font-size: 14px;
   text-align: center;
+  color: var(--text-col);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  display: flex;
+  gap: 35px;
+  margin-top: 30px;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.login a,
+.signin a {
+  text-decoration: none;
+  color: var(--col-12);
+  font-weight: 600;
+}
+
+.login{
+  background-color: var(--card-col);
+}
+
+.signin {
+  background-color: var(--heading-col);
+}
+
+.login:hover,
+.signin:hover {
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login:hover,
+.signin:hover {
+  box-shadow: 0px 0px 10px #00000080;
+}
+
+.image-container img {
+  width: 500px;
+  height: auto;
+}
+
+.footer-container{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+footer {
+  background-color: var(--nav-col);
+  color: var(--footer-text-col);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  border-radius: 20px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.social-icons {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons svg:hover{
+  fill: var(--icon-col);
+}
+
+.footer-text {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  width: 100%;
+  justify-content: end;
+}
+
+.footer-text a {
+  color: var(--footer-text-col);
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: var(--col-11);
 }
