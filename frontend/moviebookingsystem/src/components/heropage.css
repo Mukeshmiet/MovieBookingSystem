@@ -1,0 +1,100 @@
+.super-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74.8vh;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-container {
+    max-width: 50%;
+  }
+  
+  .text-container h1 {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--heading-col) !important;
+    font-size: 46px;
+    margin-bottom: 10px;
+    color: var(--white-text);
+  }
+  
+  .text-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-col);
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .login a,
+  .signin a {
+    text-decoration: none;
+    color: var(--col-12);
+    font-weight: 600;
+  }
+  
+  .login{
+    background-color: var(--card-col);
+  }
+  
+  .signin {
+    background-color: var(--heading-col);
+  }
+  
+  .login:hover,
+  .signin:hover {
+    animation: jelly 0.5s;
+  }
+  
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+  
+  .login:hover,
+  .signin:hover {
+    box-shadow: 0px 0px 10px #00000080;
+  }
+  
+  .image-container img {
+    width: 500px;
+    height: auto;
+  }
+  
+  
