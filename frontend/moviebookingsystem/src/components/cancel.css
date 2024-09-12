@@ -1,66 +1,72 @@
-/* Popup Overlay */
-.popup-overlay {
+/* Overlay for the entire screen */
+.cancel-booking-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 26, 26, 0.568);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: flex;
-    justify-content: center;
     align-items: center;
-    display: none; /* Initially hidden */
-    z-index: 9999;
-}
-
-/* Popup Container */
-.popup {
-    background-color: white;
-    padding: 30px;
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    z-index: 1000; /* Ensures the popup is above other content */
+  }
+  
+  /* Popup styling */
+  .cancel-booking-popup {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-}
-
-/* Close Button */
-.close-btn {
+  }
+  
+  /* Close button */
+  .close-btn {
     position: absolute;
     top: 10px;
-    right: 15px;
-    background-color: transparent;
+    right: 10px;
+    background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-}
-
-.close-btn:hover {
-    color: red;
-}
-
-/* Popup Heading */
-.popup h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #333;
-}
-
-/* Popup Actions */
-.popup-actions {
-    margin-top: 20px;
-}
-
-/* Cancel Booking Button */
-.cancel-booking-btn {
-    padding: 10px 20px;
-    background-color: #FF5733;
-    color: white;
+  }
+  
+  /* Heading style */
+  h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  
+  /* Container for action buttons */
+  .popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Style for buttons */
+  .confirm-btn,
+  .cancel-btn {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
-}
-
-.cancel-booking-btn:hover {
-    background-color: #C70039;
-}
+    font-size: 16px;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d; /* Gray background */
+  }
+  
+  /* Hover effects */
+  .confirm-btn:hover,
+  .cancel-btn:hover {
+    opacity: 0.9;
+  }
+  

@@ -4,16 +4,17 @@ import "./cancel.css";
 
 export default function Cancel() {
   return (
-    <div id="popup-overlay" className="popup-overlay">
-      <div className="popup">
-        <button className="close-btn" id="closePopup">
-          <Link to="./home">&times;</Link>
-        </button>
-        <h2>Do you want to cancel this booking?</h2>
+    <>
+      <div className="cancel-booking-overlay">
+      <div className="cancel-booking-popup">
+        <button className="close-btn"><Link to="./home">&times;</Link></button>
+        <h2>Are you sure you want to cancel this booking?</h2>
         <div className="popup-actions">
-          <button className="cancel-booking-btn"><Link to="./home">Cancel Booking</Link></button>
+          <button className="confirm-btn"><Link to="./home">Yes, Cancel</Link></button>
+          <button className="cancel-btn"><Link to="./home">No, Keep Booking</Link></button>
         </div>
       </div>
     </div>
+    </>
   )
 }

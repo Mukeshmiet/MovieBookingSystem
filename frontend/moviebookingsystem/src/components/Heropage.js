@@ -2,11 +2,13 @@ import "./heropage.css"
 import logo from "../media/heropageimg.png";
 import {Link} from "react-router-dom";
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Heropage() {
     return (
       <>
-      
+      <Navbar/>
        <main>
         <div className="main-container">
           <div className="text-container">
@@ -26,7 +28,7 @@ export default function Heropage() {
           </div>
         </div>
       </main>
-      
+      <Footer/>
       </>
     )
 }

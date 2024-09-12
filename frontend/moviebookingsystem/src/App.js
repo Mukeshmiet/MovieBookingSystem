@@ -13,24 +13,7 @@ import Cancel  from "./components/Cancel";
 
 function App() {
   return (
-    <div>
-      <Router>
-      <Navigation/>
-      <div>
-
-        <Routes>
-          <Route index element={<Heropage />} />
-          <Route path="/hero" element={<Heropage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/booking" element={<Booking />} />
-          <Route path="/cancel" element={<Cancel />} />
-        </Routes>
-      </div>
-        <Footer/>
-      </Router>
-    </div>
+    <></>
   );
 }
 

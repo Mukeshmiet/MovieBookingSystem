@@ -1,15 +1,17 @@
 import "./home.css"
 import {Link} from "react-router-dom";
 import React from "react";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 export default function Home() {
     return (
       <>
-      
+      <Navigation/>
       <main>
       <div className="booking-container">
         <h1>My Bookings</h1>
-
+        <div className="allbooking">
         <div className="booking-item">
           <h2>Movie Name: Avengers: Endgame</h2>
           <p><strong>Booking Date:</strong> September 1, 2024</p>
@@ -31,7 +33,9 @@ export default function Home() {
           <p><strong>Show Time:</strong> 8:00 PM</p>
           <button id="showPopupBtn" className="delete-booking-btn"><Link to="./cancel">Cancel Booking</Link></button>
         </div>
+        </div>
       </div>
     </main>
+    <Footer/>
     </>
     )}

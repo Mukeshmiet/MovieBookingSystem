@@ -8,7 +8,7 @@ export default function Booking() {
     <>
     <Navigation/>
     <div className="booking-container">
-      <button className="close-btn"><Link to="./home">&times;</Link></button>
+      <button className="close-btn"><Link to="./movies">&times;</Link></button>
       <h2>Book Your Movie</h2>
 
       <div className="dropdown">

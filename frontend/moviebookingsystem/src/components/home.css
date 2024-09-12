@@ -11,6 +11,14 @@ main {
 .booking-container h1 {
     font-size: 36px;
     margin-bottom: 30px;
+    color: var(--heading-col) ;
+}
+
+.allbooking{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
 }
 
 .booking-item {
