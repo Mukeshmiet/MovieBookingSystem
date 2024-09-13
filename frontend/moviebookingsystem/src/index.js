@@ -14,6 +14,8 @@ import Login from './components/Login';
 import Cancel from './components/Cancel';
 import Booking  from './components/Booking';
 import Movies  from './components/Movies';
+import Profile  from './components/Profile';
+import Update from  './components/Update';
 
 const router = createBrowserRouter([
   {
@@ -63,6 +65,18 @@ const router = createBrowserRouter([
   {
     path: "/booking",
     element: <Booking/>,
+  },
+  {
+    path: "/profile",
+    element: <Profile/>,
+  },
+  {
+    path: "/update",
+    element: <Update/>,
+  },
+  {
+    path: "/profile/update",
+    element: <Update/>,
   },
   {
     path: "/home/cancel",

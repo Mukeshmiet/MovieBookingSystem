@@ -20,10 +20,7 @@ export default function Navigation() {
                     <Link to="/movie">Movies</Link>
                   </li>
                   <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/profile">Username</Link>
                   </li>
                   <li>
                     <Link to="/hero">Signout</Link>
