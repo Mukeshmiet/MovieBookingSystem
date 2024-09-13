@@ -16,6 +16,12 @@ import Booking  from './components/Booking';
 import Movies  from './components/Movies';
 import Profile  from './components/Profile';
 import Update from  './components/Update';
+import Adminlogin from './components/Adminlogin';
+import Users  from './components/Users';
+import Adminmovies  from './components/Adminmovies';
+import Theater from './components/Theater';
+import Bookings  from './components/Bookings';
+import Showtime from  './components/Showtime';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +38,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/login/hero",
+    element: <Heropage/>,
+  },
+  {
+    path: "/admin/hero",
     element: <Heropage/>,
   },
   {
@@ -63,19 +73,47 @@ const router = createBrowserRouter([
     element: <Login/>,
   },
   {
+    path: "/admin",
+    element: <Adminlogin/>,
+  },
+  {
+    path: "/adminhome",
+    element: <Users/>,
+  },
+  {
+    path: "/adminmovies",
+    element: <Adminmovies/>,
+  },
+  {
+    path: "/theater",
+    element: <Theater/>,
+  },
+  {
+    path: "/users",
+    element: <Users/>,
+  },
+  {
     path: "/booking",
     element: <Booking/>,
+  },
+  {
+    path: "/bookings",
+    element: <Bookings/>,
+  },
+  {
+    path: "/showtime",
+    element: <Showtime/>,
   },
   {
     path: "/profile",
     element: <Profile/>,
   },
   {
-    path: "/update",
-    element: <Update/>,
+    path: "/update/profile",
+    element: <Profile/>,
   },
   {
-    path: "/profile/update",
+    path: "/update",
     element: <Update/>,
   },
   {

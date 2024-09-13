@@ -2,7 +2,7 @@ import "./navigation.css"
 import {Link} from "react-router-dom";
 import React from "react";
 
-export default function Navigation() {
+export default function Adminnav() {
     return (
       <>
         <div className="header-container">
@@ -14,16 +14,25 @@ export default function Navigation() {
               <nav>
                 <ul>
                 <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/adminhome">Home</Link>
                   </li>
                   <li>
-                    <Link to="/movies">Movies</Link>
+                    <Link to="/adminmovies">Movies</Link>
                   </li>
                   <li>
-                    <Link to="/profile">Username</Link>
+                    <Link to="/theater">Theater</Link>
                   </li>
                   <li>
-                    <Link to="/hero">Signout</Link>
+                    <Link to="/users">Users</Link>
+                  </li>
+                  <li>
+                    <Link to="/bookings">Bookings</Link>
+                  </li>
+                  <li>
+                    <Link to="/showtime">Showtime</Link>
+                  </li>
+                  <li>
+                    <Link to="/admin">Signout</Link>
                   </li>
                 </ul>
               </nav>

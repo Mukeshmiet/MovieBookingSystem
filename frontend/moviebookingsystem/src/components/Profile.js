@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./profiles.css";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 export default function Profile() {
   return (
+    <>
+    <Navigation/>
     <main>
       <div className="profile-container">
         <h2>Username</h2>
@@ -22,5 +26,7 @@ export default function Profile() {
         </div>
       </div>
     </main>
+    <Footer/>
+    </>
   )
 }
