@@ -1,0 +1,47 @@
+/* src/components/styles/header.css */
+
+/* Make the AppBar full width */
+.header-appbar {
+    width: 100%;               /* Full width */
+    background-color: #1976d2;  /* Customize as needed */
+    box-shadow: none;           /* Optional: Remove shadow */
+  }
+  
+  /* Center content within the Container */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;  /* Ensure container takes full width */
+    padding: 0 20px;  /* Add padding for spacing */
+  }
+  
+  /* Center the title in the Toolbar */
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Style for the header title */
+  .header-title {
+    flex-grow: 1;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Style the links */
+  .header-links button {
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .header-links button:hover {
+    background-color: rgba(255, 255, 255, 0.1);  /* Add a subtle hover effect */
+    border-radius: 5px;
+  }
+  header{
+    position:fixed !important;
+    top: 0;
+  }
