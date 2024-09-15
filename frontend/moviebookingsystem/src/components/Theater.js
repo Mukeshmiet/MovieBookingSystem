@@ -10,7 +10,7 @@ export default function Theater() {
     <Adminnav/>
     <main>
       <div className="users-container">
-        <h1>theater List</h1>
+        <h1>Theater List</h1>
         <button className="add-user-btn">Add New theater</button>
 
         <div className="user-item">
