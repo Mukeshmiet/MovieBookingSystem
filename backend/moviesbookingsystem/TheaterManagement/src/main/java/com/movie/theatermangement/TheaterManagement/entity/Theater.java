@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 public class Theater {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long theaterId;
 
     private String name;

@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.movie.bookingmangement.bookingManagement.dto.ShowtimeDTO;
 
-@FeignClient(name = "showtime-service")
+@FeignClient(name = "SHOWTIMEMANAGEMENT",url="http://localhost:8084")
 public interface ShowtimeFeignClient {
 
-    @GetMapping("/api/showtimes/{id}")
+    @GetMapping("/showtimes/{id}")
     ShowtimeDTO getShowtimeById(@PathVariable("id") Long id);
 }

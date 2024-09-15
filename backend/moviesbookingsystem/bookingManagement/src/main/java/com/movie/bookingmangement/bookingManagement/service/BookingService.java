@@ -5,6 +5,7 @@ package com.movie.bookingmangement.bookingManagement.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.movie.bookingmangement.bookingManagement.dto.BookingRequest;
 import com.movie.bookingmangement.bookingManagement.entity.Booking;
 
 public interface BookingService {
@@ -18,5 +19,7 @@ public interface BookingService {
     Booking updateBooking(Long id, Booking bookingDetails);
 
     void deleteBooking(Long id);
+
+	Booking addBooking(Long userId, BookingRequest bookingRequest) ;
 }
 

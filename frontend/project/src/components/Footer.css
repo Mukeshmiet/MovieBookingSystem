@@ -1,0 +1,20 @@
+/* Ensure the footer is always at the bottom of the page */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#app-footer {
+  background-color: #f8f9fa; /* Light background color for the footer */
+  padding: 10px 0; /* Small padding for the footer */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #e0e0e0; /* Subtle border at the top of the footer */
+}
+
+.footer-text {
+  font-size: 0.875rem; /* Smaller font size */
+  color: #6c757d; /* Darker gray color for text */
+}

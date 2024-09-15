@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.movie.bookingmangement.bookingManagement.dto.TheaterDTO;
 
-@FeignClient(name = "theater-service")
+@FeignClient(name = "THEATERMANAGEMENT",url = "http://localhost:8082")
 public interface TheaterFeignClient {
 
     @GetMapping("/api/theaters/{id}")
